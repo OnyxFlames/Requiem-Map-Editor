@@ -177,7 +177,7 @@ void RequiemTileMapMaker::export_map(const std::string filename)
 		map_data[h].resize(width);
 		for (unsigned w = 0; w < width; w++)
 		{
-			rmap << " " << (map_data[h][w].getTextureRect().left / 16) - w * 1.0625 << " " << (map_data[h][w].getTextureRect().top / 16) - h * 1.0625 << " ";
+			rmap << " " << (map_data[h][w].getTextureRect().left)  / 16 << " " << (map_data[h][w].getTextureRect().top)  / 16 << " ";
 		}
 		rmap << "\n";
 	}
